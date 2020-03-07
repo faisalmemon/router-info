@@ -15,6 +15,8 @@
 		3927623B24142AF000F0ED3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3927623924142AF000F0ED3F /* LaunchScreen.storyboard */; };
 		3927624624142AF000F0ED3F /* router_infoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927624524142AF000F0ED3F /* router_infoTests.swift */; };
 		3927625124142AF000F0ED3F /* router_infoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927625024142AF000F0ED3F /* router_infoUITests.swift */; };
+		3927626024142C5000F0ED3F /* networkQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927625F24142C5000F0ED3F /* networkQuery.m */; };
+		3927626324142C9700F0ED3F /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 3927626224142C9700F0ED3F /* network.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		3927624C24142AF000F0ED3F /* router-infoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "router-infoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3927625024142AF000F0ED3F /* router_infoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = router_infoUITests.swift; sourceTree = "<group>"; };
 		3927625224142AF000F0ED3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3927625E24142C5000F0ED3F /* router-info-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "router-info-Bridging-Header.h"; sourceTree = "<group>"; };
+		3927625F24142C5000F0ED3F /* networkQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = networkQuery.m; sourceTree = "<group>"; };
+		3927626124142C9700F0ED3F /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
+		3927626224142C9700F0ED3F /* network.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +108,14 @@
 				3927622E24142AEB00F0ED3F /* AppDelegate.swift */,
 				3927623024142AEB00F0ED3F /* SceneDelegate.swift */,
 				3927623224142AEB00F0ED3F /* ViewController.swift */,
+				3927625F24142C5000F0ED3F /* networkQuery.m */,
+				3927626124142C9700F0ED3F /* network.h */,
+				3927626224142C9700F0ED3F /* network.c */,
 				3927623424142AEB00F0ED3F /* Main.storyboard */,
 				3927623724142AF000F0ED3F /* Assets.xcassets */,
 				3927623924142AF000F0ED3F /* LaunchScreen.storyboard */,
 				3927623C24142AF000F0ED3F /* Info.plist */,
+				3927625E24142C5000F0ED3F /* router-info-Bridging-Header.h */,
 			);
 			path = "router-info";
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 				TargetAttributes = {
 					3927622A24142AEB00F0ED3F = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					3927624024142AF000F0ED3F = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -260,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3927623324142AEB00F0ED3F /* ViewController.swift in Sources */,
+				3927626024142C5000F0ED3F /* networkQuery.m in Sources */,
 				3927622F24142AEB00F0ED3F /* AppDelegate.swift in Sources */,
 				3927623124142AEB00F0ED3F /* SceneDelegate.swift in Sources */,
+				3927626324142C9700F0ED3F /* network.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y3322JWHB;
 				INFOPLIST_FILE = "router-info/Info.plist";
@@ -443,6 +457,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "perivalebluebell.com.router-info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "router-info/router-info-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y3322JWHB;
 				INFOPLIST_FILE = "router-info/Info.plist";
@@ -461,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "perivalebluebell.com.router-info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "router-info/router-info-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -9,7 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func getWiFiInformationButtonAction(_ sender: Any) {
+        DispatchQueue.main.async {
+            let networkingInformation = routerInfo_getRouterAddress()
+            
+        }
+    }
+    
+    @IBOutlet weak var wiFiInformationTextViewOutlet: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
