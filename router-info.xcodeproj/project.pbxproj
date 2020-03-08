@@ -17,6 +17,7 @@
 		3927625124142AF000F0ED3F /* router_infoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927625024142AF000F0ED3F /* router_infoUITests.swift */; };
 		3927626024142C5000F0ED3F /* networkQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927625F24142C5000F0ED3F /* networkQuery.m */; };
 		3927626324142C9700F0ED3F /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 3927626224142C9700F0ED3F /* network.c */; };
+		392762652414EA4C00F0ED3F /* RouterAndRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 392762642414EA4C00F0ED3F /* RouterAndRoutes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		3927625F24142C5000F0ED3F /* networkQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = networkQuery.m; sourceTree = "<group>"; };
 		3927626124142C9700F0ED3F /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
 		3927626224142C9700F0ED3F /* network.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
+		392762642414EA4C00F0ED3F /* RouterAndRoutes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RouterAndRoutes.m; path = "router-info/RouterAndRoutes.m"; sourceTree = "<group>"; };
+		392762662414EA9400F0ED3F /* RouterAndRoutes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAndRoutes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		3927622224142AEB00F0ED3F = {
 			isa = PBXGroup;
 			children = (
+				392762642414EA4C00F0ED3F /* RouterAndRoutes.m */,
+				392762662414EA9400F0ED3F /* RouterAndRoutes.h */,
 				3927622D24142AEB00F0ED3F /* router-info */,
 				3927624424142AF000F0ED3F /* router-infoTests */,
 				3927624F24142AF000F0ED3F /* router-infoUITests */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392762652414EA4C00F0ED3F /* RouterAndRoutes.m in Sources */,
 				3927623324142AEB00F0ED3F /* ViewController.swift in Sources */,
 				3927626024142C5000F0ED3F /* networkQuery.m in Sources */,
 				3927622F24142AEB00F0ED3F /* AppDelegate.swift in Sources */,
