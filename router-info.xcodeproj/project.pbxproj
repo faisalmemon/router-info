@@ -15,8 +15,6 @@
 		3927623B24142AF000F0ED3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3927623924142AF000F0ED3F /* LaunchScreen.storyboard */; };
 		3927624624142AF000F0ED3F /* router_infoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927624524142AF000F0ED3F /* router_infoTests.swift */; };
 		3927625124142AF000F0ED3F /* router_infoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927625024142AF000F0ED3F /* router_infoUITests.swift */; };
-		3927626024142C5000F0ED3F /* networkQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927625F24142C5000F0ED3F /* networkQuery.m */; };
-		3927626324142C9700F0ED3F /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 3927626224142C9700F0ED3F /* network.c */; };
 		392762652414EA4C00F0ED3F /* RouterAndRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 392762642414EA4C00F0ED3F /* RouterAndRoutes.m */; };
 /* End PBXBuildFile section */
 
@@ -53,10 +51,7 @@
 		3927625024142AF000F0ED3F /* router_infoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = router_infoUITests.swift; sourceTree = "<group>"; };
 		3927625224142AF000F0ED3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3927625E24142C5000F0ED3F /* router-info-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "router-info-Bridging-Header.h"; sourceTree = "<group>"; };
-		3927625F24142C5000F0ED3F /* networkQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = networkQuery.m; sourceTree = "<group>"; };
-		3927626124142C9700F0ED3F /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
-		3927626224142C9700F0ED3F /* network.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
-		392762642414EA4C00F0ED3F /* RouterAndRoutes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RouterAndRoutes.m; path = "router-info/RouterAndRoutes.m"; sourceTree = "<group>"; };
+		392762642414EA4C00F0ED3F /* RouterAndRoutes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterAndRoutes.m; sourceTree = "<group>"; };
 		392762662414EA9400F0ED3F /* RouterAndRoutes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAndRoutes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +83,6 @@
 		3927622224142AEB00F0ED3F = {
 			isa = PBXGroup;
 			children = (
-				392762642414EA4C00F0ED3F /* RouterAndRoutes.m */,
-				392762662414EA9400F0ED3F /* RouterAndRoutes.h */,
 				3927622D24142AEB00F0ED3F /* router-info */,
 				3927624424142AF000F0ED3F /* router-infoTests */,
 				3927624F24142AF000F0ED3F /* router-infoUITests */,
@@ -110,12 +103,11 @@
 		3927622D24142AEB00F0ED3F /* router-info */ = {
 			isa = PBXGroup;
 			children = (
+				392762642414EA4C00F0ED3F /* RouterAndRoutes.m */,
+				392762662414EA9400F0ED3F /* RouterAndRoutes.h */,
 				3927622E24142AEB00F0ED3F /* AppDelegate.swift */,
 				3927623024142AEB00F0ED3F /* SceneDelegate.swift */,
 				3927623224142AEB00F0ED3F /* ViewController.swift */,
-				3927625F24142C5000F0ED3F /* networkQuery.m */,
-				3927626124142C9700F0ED3F /* network.h */,
-				3927626224142C9700F0ED3F /* network.c */,
 				3927623424142AEB00F0ED3F /* Main.storyboard */,
 				3927623724142AF000F0ED3F /* Assets.xcassets */,
 				3927623924142AF000F0ED3F /* LaunchScreen.storyboard */,
@@ -277,10 +269,8 @@
 			files = (
 				392762652414EA4C00F0ED3F /* RouterAndRoutes.m in Sources */,
 				3927623324142AEB00F0ED3F /* ViewController.swift in Sources */,
-				3927626024142C5000F0ED3F /* networkQuery.m in Sources */,
 				3927622F24142AEB00F0ED3F /* AppDelegate.swift in Sources */,
 				3927623124142AEB00F0ED3F /* SceneDelegate.swift in Sources */,
-				3927626324142C9700F0ED3F /* network.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
