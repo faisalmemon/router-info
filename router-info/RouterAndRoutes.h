@@ -15,10 +15,6 @@
 #import <net/if_dl.h>
 #import <sys/sysctl.h>
 
-#if TARGET_IPHONE_SIMULATOR
-#include <net/route.h>
-#endif
-
 #import <Foundation/Foundation.h>
 
 #define RTF_PRCLONING    0x10000        /* protocol requires cloning */
@@ -43,8 +39,6 @@
 #define RTA_IFA        0x20    /* interface addr sockaddr present */
 #define RTA_AUTHOR    0x40    /* sockaddr for author of redirect */
 #define RTA_BRD        0x80    /* for NEWADDR, broadcast or p-p dest addr */
-
-#if !(TARGET_IPHONE_SIMULATOR)
 
 struct rt_metrics {
     u_int32_t    rmx_locks;    /* Kernel must leave these values alone */
@@ -75,8 +69,6 @@ struct rt_msghdr2 {
     u_int32_t rtm_inits;        /* which metrics we are initializing */
     struct rt_metrics rtm_rmx;    /* metrics themselves */
 };
-
-#endif
 
 @interface Route_Info : NSObject
 {
