@@ -16,6 +16,7 @@
 		3927624624142AF000F0ED3F /* router_infoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927624524142AF000F0ED3F /* router_infoTests.swift */; };
 		3927625124142AF000F0ED3F /* router_infoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927625024142AF000F0ED3F /* router_infoUITests.swift */; };
 		392762652414EA4C00F0ED3F /* RouterAndRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 392762642414EA4C00F0ED3F /* RouterAndRoutes.m */; };
+		3927626924169F7500F0ED3F /* debugDetector.c in Sources */ = {isa = PBXBuildFile; fileRef = 3927626824169F7500F0ED3F /* debugDetector.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3927625E24142C5000F0ED3F /* router-info-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "router-info-Bridging-Header.h"; sourceTree = "<group>"; };
 		392762642414EA4C00F0ED3F /* RouterAndRoutes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterAndRoutes.m; sourceTree = "<group>"; };
 		392762662414EA9400F0ED3F /* RouterAndRoutes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAndRoutes.h; sourceTree = "<group>"; };
+		3927626724169F7500F0ED3F /* debugDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debugDetector.h; sourceTree = "<group>"; };
+		3927626824169F7500F0ED3F /* debugDetector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debugDetector.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				392762642414EA4C00F0ED3F /* RouterAndRoutes.m */,
+				3927626724169F7500F0ED3F /* debugDetector.h */,
+				3927626824169F7500F0ED3F /* debugDetector.c */,
 				392762662414EA9400F0ED3F /* RouterAndRoutes.h */,
 				3927622E24142AEB00F0ED3F /* AppDelegate.swift */,
 				3927623024142AEB00F0ED3F /* SceneDelegate.swift */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				392762652414EA4C00F0ED3F /* RouterAndRoutes.m in Sources */,
+				3927626924169F7500F0ED3F /* debugDetector.c in Sources */,
 				3927623324142AEB00F0ED3F /* ViewController.swift in Sources */,
 				3927622F24142AEB00F0ED3F /* AppDelegate.swift in Sources */,
 				3927623124142AEB00F0ED3F /* SceneDelegate.swift in Sources */,

@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBAction func getWiFiInformationButtonAction(_ sender: Any) {
         DispatchQueue.global().async {
             var results = ""
+            let isBeingDebugged = AmIBeingDebugged()
+            results += "Am I being debugged? \(isBeingDebugged)\n"
             if let routes = Route_Info.getRoutes() as? [Route_Info] {
                 for item in routes {
                     if let gateway = item.getGateway() {
@@ -37,6 +39,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var wiFiInformationTextViewOutlet: UITextView!
     
     override func viewDidLoad() {
+        let isBeingDebugged = AmIBeingDebugged()
+        print("Am I being debugged? \(isBeingDebugged)")
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
